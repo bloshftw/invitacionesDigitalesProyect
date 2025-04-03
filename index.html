@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-fondo text-texto font-principal">
+     <!-- Navegación -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="text-xl font-bold text-gray-700">
+          <a href="index.html">BloshTech</a>
+        </div>
+        <!-- Menú Desktop -->
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-600 hover:text-gray-900 transition">Inicio</a>
+          <a href="/html/services.html" class="text-gray-600 hover:text-gray-900 transition">Servicios</a>
+          <a href="portfolio.html" class="text-gray-600 hover:text-gray-900 transition">Portfolio</a>
+          <a href="contact.html" class="text-gray-600 hover:text-gray-900 transition">Contacto</a>
+        </div>
+        <!-- Botón Hamburguesa Mobile -->
+        <button id="menu-btn" class="md:hidden text-gray-700 hover:text-gray-900">
+          ☰
+        </button>
+      </div>
+    </div>
+    <!-- Menú Mobile -->
+    <div id="menu" class="hidden md:hidden bg-white shadow-md flex flex-col text-center">
+      <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Inicio</a>
+      <a href="services.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Servicios</a>
+      <a href="portfolio.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Portfolio</a>
+      <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20 bg-fondo">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+        <!-- Texto -->
+        <div class="md:w-1/2 md:mb-0">
+          <h1 class="text-[1.8rem] md:text-5xl font-bold mb-4 text-center">
+            Invitaciones Digitales para Eventos Inolvidables
+          </h1>
+          <p class="text-[1rem] mb-4 text-center">
+            Sorprendé a tus invitados con diseños modernos, elegantes y totalmente personalizados. Incluimos confirmación por WhatsApp, acceso rápido, y diseños responsivos.
+          </p>
+          <div class="flex flex-col items-center sm:flex-row sm:justify-start gap-4">
+            <a href="#contacto" class="bg-primario text-black px-6 py-3 rounded-full shadow-md hover:bg-resaltado transition border text-center">
+              Solicitar invitación
+            </a>
+            <a href="#plantillas" class="border border-primario text-primario px-6 py-3 rounded-full hover:bg-primario hover:text-white transition text-center">
+              Ver plantillas
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagen demo -->
+        <div class="md:w-1/2 flex justify-center mt-16 ">
+          <img src="./images/hero/_Pngtree_cell_phone_mockup_8987311-removebg-preview.png" alt="Demo invitación digital" class="w-96 md:w-80 lg:w-7xl rounded-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Características -->
+    <section id="servicios" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-semibold mb-10">
+          ¿Por qué elegir nuestras invitaciones?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 border rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-2 text-primario">Diseño Personalizado</h3>
+            <p>Elegí colores, fuentes y estilo según tu evento.</p>
+          </div>
+          <div class="p-6 border rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-2 text-primario">Confirmación por WhatsApp</h3>
+            <p>Recibí las respuestas de tus invitados al instante.</p>
+          </div>
+          <div class="p-6 border rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-2 text-primario">Adaptable a cualquier dispositivo</h3>
+            <p>Diseño 100% responsive, perfecto para móvil o PC.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-white text-center">
+      <div class="max-w-7xl mx-auto px-4">
+        <p>© 2025 Luciano Jesus Rodriguez. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!--Javascript-->
+    <script src="./js/main.js"></script>
+    <!--Javascript-->
+  </body>
+</html>
