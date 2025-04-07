@@ -1,14 +1,18 @@
 module.exports = {
   content: [
-"./index.html"
+    "./index.html"
   ],
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      colors: {
+        primario: '#93C5FD',
+        secundario: '#FBCFE8',
+        resaltado: '#A5B4FC',
+        texto: '#374151',
+        fondo: '#F9FAFB',
+        exito: '#D1FAE5',
+      },
+    },
   },
   plugins: [],
 }
