@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpleaños de Emilia</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="text-gray-800 font-sans bg-[url('../../../../images/backgrounds/fiesta/patron-pastel.jpg')] bg-repeat bg-fixed bg-[length:300px_auto] bg-white/30 backdrop-blur-xs">
+    <!-- Hero con imagen enmarcada -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 py-12 ">
+      <h1 class="text-4xl font-extrabold text-purple-600 mb-2">¡Estás invitado!</h1>
+      <p class="text-xl text-purple-800 mb-4">Te espero para celebrar mi cumpleaños</p>
+  
+      <!-- Imagen del cumpleañero enmarcada -->
+      <div class="w-60 h-60 mb-4 rounded-3xl overflow-hidden shadow-xl border-4 border-purple-300">
+        <img src="../../../../images/personas/estandar/cumple-infantil/niña.jpg" alt="Foto del cumpleañero Emilia" class="w-full h-full object-cover" />
+      </div>
+  
+      <p class="text-2xl font-semibold text-purple-700 mt-4">Cumpleaños de Emilia</p>
+      <p class="text-lg text-purple-500">¡Cumplo 4 añitos!</p>
+    </section>
+  
+    <!-- Mensaje motivacional para asistir -->
+    <section class="px-6 pb-10 text-center">
+      <div class="max-w-xl mx-auto">
+        <p class="text-lg text-purple-700 font-medium">
+          Te esperamos para vivir un día mágico lleno de juegos, sorpresas y mucha alegría junto a Emilia.
+        </p>
+      </div>
+    </section>
+  
+    <!-- Detalles del Evento -->
+    <section class="py-10 px-6">
+      <div class="max-w-md mx-auto bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-purple-200">
+        <h2 class="text-3xl font-bold text-center mb-6 text-purple-700">🎉 Detalles del evento</h2>
+        <div class="bg-purple-200 text-purple-800 font-bold text-center w-28 py-2 rounded-xl mx-auto shadow mb-4">
+          6 de Mayo
+        </div>
+        <ul class="space-y-3 text-lg text-purple-800">
+          <li><strong>🕒 Hora:</strong> 18:00 hs</li>
+          <li><strong>📍 Lugar:</strong> Salón Estrella - Calle Alegría 789</li>
+        </ul>
+        <div class="relative w-full pt-[56.25%] rounded-md overflow-hidden mt-6">
+          <iframe class="absolute top-0 left-0 w-full h-full rounded-md"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d136075.75542540287!2d-58.427343343593165!3d-22.70669646389283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1744353666901!5m2!1ses!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Confirmación de Asistencia -->
+    <section class="py-10 px-6">
+      <div class="max-w-md mx-auto bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-purple-300">
+        <h2 class="text-2xl font-bold text-center mb-4 text-purple-700">💬 Confirmar Asistencia</h2>
+        <input type="text" id="nombre" placeholder="Tu nombre" class="w-full p-2 border rounded mb-3 border-purple-300" />
+        <input type="number" id="acompanantes" placeholder="Cantidad de acompañantes" class="w-full p-2 border rounded mb-4 border-purple-300" />
+        <button class="flex items-center justify-center gap-2 w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold p-2 rounded shadow">
+          <img src="../../../../images/logo/icono-whattsapp.svg" alt="Icono WhatsApp" class="w-5 h-5"> Confirmar por WhatsApp
+        </button>
+      </div>
+      <p class="text-sm text-center text-purple-400 mt-12 mb-12 italic">
+        ¡Te esperamos con mucha alegría y ganas de compartir un hermoso momento!
+      </p>
+    </section>
+  
+    <!--Javascript-->
+    <script src="/js/asistencia.js"></script>
+    <!--Javascript-->
+  </body>
+</html>
