@@ -12,56 +12,103 @@
     <!--Fuente google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-          font-family: 'Poppins', sans-serif;
+        .hover-scale {
+            transition: transform 0.3s ease;
         }
-        .btn-animado {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .hover-scale:hover {
+            transform: scale(1.03);
         }
-        .btn-animado:hover {
-          transform: scale(1.05);
-          box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-      </style>
+    </style>
       <title>Servicios Disponibles</title>      
       </head>
 
 
       <body class="bg-[#FFF9F9] text-[#374151]">
 
-         <section class="min-h-screen flex flex-col sm:flex-row h-screen">
-    <!-- Opción 1: Plantilla prediseñada -->
-    <div class="w-full sm:w-1/2 flex items-center justify-center bg-gradient-to-br from-[#A5D8FF] to-[#93C5FD] text-white p-10" data-aos="fade-up">
-      <div class="max-w-md text-center">
-        <h2 class="text-3xl font-extrabold mb-4 text-white drop-shadow-lg">🎁 <span class="bg-white text-[#93C5FD] px-3 py-1 rounded-full">Plantilla Prefabricada</span></h2>
-        <p class="mb-6 text-sm leading-relaxed">
-          Elegí entre una variedad de plantillas prediseñadas con estructuras visuales preestablecidas. Perfecto para quienes buscan rapidez, simplicidad y calidad sin complicarse.
-        </p>
-        <ul class="text-sm mb-6 space-y-2">
-          <li>✅ Fondos visuales predeterminados</li>
-          <li>✅ Componentes seleccionados por expertos</li>
-          <li>✅ Configuración rápida y sin esfuerzo</li>
-        </ul>
-        <a href="predisenada.html" class="inline-block bg-white text-[#374151] font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition btn-animado">Elegir esta opción</a>
-      </div>
-    </div>
-
-    <!-- Opción 2: Personalizado -->
-    <div class="w-full sm:w-1/2 flex items-center justify-center bg-gradient-to-br from-[#CABDFF] to-[#B9A9FB] text-white p-10" data-aos="fade-up">
-      <div class="max-w-md text-center">
-        <h2 class="text-3xl font-extrabold mb-4 text-white drop-shadow-lg">🧩 <span class="bg-white text-[#B9A9FB] px-3 py-1 rounded-full">Personalizado</span></h2>
-        <p class="mb-6 text-sm leading-relaxed">
-          Armá tu tarjeta desde cero eligiendo fondo, componentes, colores y estilo. Ideal para quienes desean destacar con una invitación única y a medida.
-        </p>
-        <ul class="text-sm mb-6 space-y-2">
-          <li>🎨 Elegí tu propio fondo y paleta de colores</li>
-          <li>🧩 Combiná componentes como música, mapa y más</li>
-          <li>💬 Atención personalizada y vista previa incluida</li>
-        </ul>
-        <a href="personalizado.html" class="inline-block bg-white text-[#374151] font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition btn-animado">Elegir esta opción</a>
-      </div>
-    </div>
-  </section>
+        <div class="min-h-screen">
+            <!-- Contenedor principal -->
+            <div class="flex flex-col md:flex-row w-full min-h-screen">
+                
+                <!-- Sección 1 - Izquierda/Superior -->
+                <div class="w-full md:w-1/2 bg-blue-600 text-white p-8 md:p-12 flex flex-col justify-center items-center hover-scale">
+                    <div class="max-w-md mx-auto text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-yellow-300">Solución Empresarial</h2>
+                        
+                        <ul class="text-lg mb-8 space-y-4 text-left">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 mr-2 mt-1 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Soporte técnico 24/7 dedicado a su negocio</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 mr-2 mt-1 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Capacidad de escalamiento inmediato</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 mr-2 mt-1 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Herramientas analíticas avanzadas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 mr-2 mt-1 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Seguridad de nivel empresarial</span>
+                            </li>
+                        </ul>
+                        
+                        <button onclick="location.href='#soluciones-empresariales'" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Sección 2 - Derecha/Inferior -->
+                <div class="w-full md:w-1/2 bg-purple-700 text-white p-8 md:p-12 flex flex-col justify-center items-center hover-scale">
+                    <div class="max-w-md mx-auto text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-300">Plan Personal</h2>
+                        
+                        <ul class="text-lg mb-8 space-y-4 text-left">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 mr-2 mt-1 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Interfaz intuitiva y fácil de usar</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 mr-2 mt-1 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Precio accesible para individuos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 mr-2 mt-1 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Funciones personalizadas para uso diario</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 mr-2 mt-1 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Actualizaciones automáticas incluidas</span>
+                            </li>
+                        </ul>
+                        
+                        <button onclick="location.href='#plan-personal'" class="bg-green-400 hover:bg-green-500 text-purple-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+                            Empezar ahora
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+          
+          
       
         <!--Javascript-->
   <script src="./js/main.js"></script>
