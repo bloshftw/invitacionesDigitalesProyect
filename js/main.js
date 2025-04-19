@@ -19,7 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.getElementById('menu-btn');
   const menu = document.getElementById('menu');
   menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+      setTimeout(() => menu.classList.remove('scale-y-0'), 10);
+    } else {
+      menu.classList.add('scale-y-0');
+      setTimeout(() => menu.classList.add('hidden'), 300);
+    }
   });
 
   //  Animación de entrada del Hero
