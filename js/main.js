@@ -14,6 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
     freeModeMomentum: false,
   });
 
+  //Swiper carrusel seccion personalizada:
+  const swiperHero = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    speed: 1000,
+  });
+
   // Lógica del menú móvil
   const menuBtn = document.getElementById('menu-btn');
   const menu = document.getElementById('menu');

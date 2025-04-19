@@ -12,29 +12,16 @@
     <!--Fuente google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        .hover-scale {
-            transition: transform 0.3s ease;
-        }
-        .hover-scale:hover {
-            transform: scale(1.02);
-        }
-        /* Asegura que el contenido se ajuste dentro del espacio disponible */
-        .section-content {
-            overflow-y: auto;
-        }
-        @media (max-width: 768px) {
-            .mobile-section {
-                height: 50vh;
-                min-height: 50vh;
-                max-height: 50vh;
-            }
-        }
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .btn-animado {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .btn-animado:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      }
     </style>
 
 
@@ -42,61 +29,33 @@
       </head>
 
 
-      <body class="bg-[#FFF9F9] text-[#374151]">
+      <body class="bg-[#FFF9F9] text-[#374151] h-svh">
 
-        <div class="flex flex-col md:flex-row w-full h-screen font-poppins">
-            <!-- Sección 1 - Plantilla prefabricada -->
-            <div class="w-full md:w-1/2 bg-gradient-to-br from-[#A5D8FF] to-[#93C5FD] text-white p-6 md:p-10 flex flex-col justify-center items-center hover:scale-[1.01] transition">
-              <div class="w-full max-w-md text-center">
-                <h2 class="text-2xl md:text-4xl font-extrabold mb-4 text-[#fff] drop-shadow">🎁 Plantilla Prefabricada</h2>
-          
-                <ul class="text-base md:text-lg mb-6 space-y-3 text-left">
-                  <li class="flex items-start">
-                    <span class="text-white text-xl mr-2">✅</span>
-                    <span>Fondos y estilos ya definidos</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-white text-xl mr-2">✅</span>
-                    <span>Configuración rápida en minutos</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-white text-xl mr-2">✅</span>
-                    <span>Ideal para quienes buscan algo simple y lindo</span>
-                  </li>
-                </ul>
-          
-                <button onclick="location.href='predisenada.html'" class="bg-white hover:bg-[#f1f5f9] text-[#374151] font-semibold py-2 px-6 md:py-3 md:px-8 rounded-full transition duration-300 shadow-sm">
-                  Ver plantillas
-                </button>
-              </div>
-            </div>
-          
-            <!-- Sección 2 - Personalizada -->
-            <div class="w-full md:w-1/2 bg-gradient-to-br from-[#CABDFF] to-[#B9A9FB] text-white p-6 md:p-10 flex flex-col justify-center items-center hover:scale-[1.01] transition ">
-              <div class="w-full max-w-md text-center">
-                <h2 class="text-2xl md:text-4xl font-extrabold mb-4 text-white drop-shadow">🧩 Personalizada</h2>
-          
-                <ul class="text-base md:text-lg mb-6 space-y-3 text-left">
-                  <li class="flex items-start">
-                    <span class="text-white text-xl mr-2">🎨</span>
-                    <span>Elegí fondo, colores y estilo</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-white text-xl mr-2">🧩</span>
-                    <span>Agregá componentes como música, mapa, etc.</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-white text-xl mr-2">💬</span>
-                    <span>Atención personalizada y vista previa</span>
-                  </li>
-                </ul>
-          
-                <button onclick="location.href='personalizado.html'" class="bg-white hover:bg-[#f1f5f9] text-[#374151] font-semibold py-2 px-6 md:py-3 md:px-8 rounded-full transition duration-300 shadow-sm">
-                  Crear mi tarjeta
-                </button>
-              </div>
+        <section class="w-full min-h-screen flex flex-col md:flex-row">
+          <!-- Plantilla prefabricada -->
+          <div class="w-full md:w-1/2 relative overflow-hidden group transition-all duration-500 ease-in-out hover:grow cursor-pointer">
+            <div class="absolute inset-0 bg-gradient-to-br from-[#A5D8FF] to-[#93C5FD] z-0"></div>
+            <div class="relative z-10 p-8 flex flex-col justify-center items-center h-full text-white text-center group-hover:scale-105 transition-transform duration-300">
+              <h2 class="text-2xl md:text-4xl font-bold mb-4">🎁 Plantilla Prefabricada</h2>
+              <p class="text-sm md:text-base opacity-70 group-hover:opacity-100 max-w-xs transition-opacity duration-300">
+                Accedé a plantillas visualmente atractivas, listas para usar. Ideales si buscás simplicidad y efectividad sin complicarte.
+              </p>
+              <a href="predisenada.html" class="mt-4 bg-white text-[#374151] font-semibold py-2 px-5 rounded-full shadow hover:bg-gray-200 transition duration-300">Ver plantillas</a>
             </div>
           </div>
+        
+          <!-- Personalizada -->
+          <div class="w-full md:w-1/2 relative overflow-hidden group transition-all duration-500 ease-in-out hover:grow cursor-pointer">
+            <div class="absolute inset-0 bg-gradient-to-br from-[#CABDFF] to-[#B9A9FB] z-0"></div>
+            <div class="relative z-10 p-8 flex flex-col justify-center items-center h-full text-white text-center group-hover:scale-105 transition-transform duration-300">
+              <h2 class="text-2xl md:text-4xl font-bold mb-4">🧩 Personalizada</h2>
+              <p class="text-sm md:text-base opacity-70 group-hover:opacity-100 max-w-xs transition-opacity duration-300">
+                Armá tu tarjeta desde cero: fondo, colores, componentes. Perfecta para quienes desean destacar con estilo propio.
+              </p>
+              <a href="/html/personalizada.html" class="mt-4 bg-white text-[#374151] font-semibold py-2 px-5 rounded-full shadow hover:bg-gray-200 transition duration-300">Crear tarjeta</a>
+            </div>
+          </div>
+        </section>
           
           
           

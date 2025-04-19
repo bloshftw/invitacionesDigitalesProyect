@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <!-- CSS de Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--anim-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Fuente google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Nunito:wght@400;700&family=Poppins:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Personaliza tu invitacion</title>
+</head>
+
+<body>
+    
+<!-- Menu de navegacion -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#FFF9F9] text-[#374151] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Logo + Nombre -->
+      <div class="flex items-center space-x-2">
+        <img src="/images/logo/logo.png" alt="Momentta Logo" class="w-44 h-auto">
+      </div>
+  
+      <!-- Menú desktop -->
+      <div class="hidden md:flex space-x-6 font-medium text-sm">
+        <a href="/index.html" class="hover:text-[#A5D8FF] transition-colors">Inicio</a>
+        <a href="#como-funciona" class="hover:text-[#A5D8FF] transition-colors">¿Cómo funciona?</a>
+        <a href="#tematicas" class="hover:text-[#A5D8FF] transition-colors">Temáticas</a>
+        <a href="#componentes" class="hover:text-[#A5D8FF] transition-colors">Componentes</a>
+        <a href="#faq" class="hover:text-[#A5D8FF] transition-colors">FAQ</a>
+        <a href="#contacto" class="hover:text-[#A5D8FF] transition-colors">Contacto</a>
+      </div>
+  
+      <!-- Botón hamburguesa (mobile) -->
+      <button id="menu-btn" class="md:hidden text-[#374151] focus:outline-none text-2xl">
+        ☰
+      </button>
+    </div>
+  
+    <!-- Menú mobile -->
+    <div id="menu" class="md:hidden hidden bg-[#FFF9F9] backdrop-blur-md shadow-md px-4 py-3 rounded-b-xl text-sm font-medium transition-all duration-300 ease-in-out transform origin-top scale-y-0">
+        <a href="/index.html" class="block py-2 hover:text-[#A5D8FF]">Inicio</a>
+      <a href="#como-funciona" class="block py-2 hover:text-[#A5D8FF]">¿Cómo funciona?</a>
+      <a href="#tematicas" class="block py-2 hover:text-[#A5D8FF]">Temáticas</a>
+      <a href="#componentes" class="block py-2 hover:text-[#A5D8FF]">Componentes</a>
+      <a href="#faq" class="block py-2 hover:text-[#A5D8FF]">FAQ</a>
+      <a href="#contacto" class="block py-2 hover:text-[#A5D8FF]">Contacto</a>
+    </div>
+  </nav>
+  <!--Menu de navegacion-->
+
+<!--Hero con carrusel swiper-->
+<!-- Hero con carrusel Swiper -->
+<section class="w-full h-screen relative">
+    <div class="swiper h-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative h-full">
+          <img src="/images/carousel/Seccion-personalizada/casamiento.jpg" alt="Boda" class="object-cover w-full h-full" />
+          <div class="absolute inset-0 bg-opacity-50 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+              <h2 class="text-2xl md:text-4xl font-bold mb-2">Celebrá el amor con estilo</h2>
+              <p class="text-base md:text-lg">Creá una invitación inolvidable para tu casamiento</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative h-full">
+          <img src="/images/carousel/Seccion-personalizada/cumpleaños.jpg" alt="Cumpleaños" class="object-cover w-full h-full" />
+          <div class="absolute inset-0 bg-opacity-50 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+              <h2 class="text-2xl md:text-4xl font-bold mb-2">Hacelo especial desde la invitación</h2>
+              <p class="text-base md:text-lg">Cumpleaños infantiles, temáticos o únicos</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative h-full">
+          <img src="/images/carousel/Seccion-personalizada/globos.jpg" alt="Baby shower" class="object-cover w-full h-full" />
+          <div class="absolute inset-0 bg-opacity-50 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+              <h2 class="text-2xl md:text-4xl font-bold mb-2">Para tus mejores momentos</h2>
+              <p class="text-base md:text-lg">Diseños personalizados para todo tipo de eventos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--Hero con carrusel swiper-->
+
+<!--Section: "Paso a paso para crear tu tarjeta"-->
+<!-- Sección: Cómo crear tu tarjeta -->
+<section id="como-crear" class="bg-[#fefae0] py-20 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#374151] mb-4">¿Cómo crear tu tarjeta personalizada?</h2>
+    <p class="text-[#6b7280] max-w-2xl mx-auto mb-10">Te guiamos paso a paso para que puedas armar una invitación digital a tu gusto, combinando fondos y componentes según tu evento.</p>
+  
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
+      <!-- Paso 1 -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <div class="text-4xl mb-2">🎨</div>
+        <h3 class="font-semibold text-lg mb-1">1. Elegí un fondo</h3>
+        <p class="text-sm text-[#6b7280]">Seleccioná un fondo visual que se adapte al estilo de tu evento.</p>
+      </div>
+      <!-- Paso 2 -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <div class="text-4xl mb-2">🧩</div>
+        <h3 class="font-semibold text-lg mb-1">2. Sumá componentes</h3>
+        <p class="text-sm text-[#6b7280]">Agregá música, ubicación, fotos, texto personalizado y más.</p>
+      </div>
+      <!-- Paso 3 -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <div class="text-4xl mb-2">💬</div>
+        <h3 class="font-semibold text-lg mb-1">3. Contanos lo que querés</h3>
+        <p class="text-sm text-[#6b7280]">Envianos tu selección por WhatsApp y lo adaptamos a tu gusto.</p>
+      </div>
+      <!-- Paso 4 -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <div class="text-4xl mb-2">✅</div>
+        <h3 class="font-semibold text-lg mb-1">4. Recibí tu tarjeta</h3>
+        <p class="text-sm text-[#6b7280]">Revisá la vista previa y compartila con tus seres queridos.</p>
+      </div>
+    </div>
+  </section>
+<!--Section: "Paso a paso para crear tu tarjeta"-->
+
+<!-- Sección: Ejemplos de tarjetas -->
+<section class="bg-white py-20 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#374151] mb-4">Ejemplos de tarjetas personalizadas</h2>
+    <p class="text-[#6b7280] max-w-2xl mx-auto mb-10">Mirá cómo puede verse tu invitación digital según el tipo de evento. Cada una incluye componentes reales que podés personalizar.</p>
+  
+    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <!-- Tarjeta 1 -->
+      <div class="bg-[#fefae0] rounded-xl shadow-md p-6 flex flex-col items-center">
+        <img src="/images/PersonalizacionSeccion/demos/casamiento.jpg" alt="Ejemplo Casamiento" class="w-full h-auto rounded-lg mb-4 shadow" />
+        <h3 class="text-xl font-semibold text-[#374151] mb-2">💍 Casamiento</h3>
+        <p class="text-sm text-[#6b7280] mb-4">Una invitación elegante con música romántica, ubicación y texto personalizado.</p>
+        <a href="#" class="text-primario font-medium hover:underline">Ver detalles</a>
+      </div>
+  
+      <!-- Tarjeta 2 -->
+      <div class="bg-[#fefae0] rounded-xl shadow-md p-6 flex flex-col items-center">
+        <img src="/images/PersonalizacionSeccion/demos/cumpleaños-infantil.jpg" alt="Ejemplo Cumpleaños" class="w-full h-auto rounded-lg mb-4 shadow" />
+        <h3 class="text-xl font-semibold text-[#374151] mb-2">🎂 Cumpleaños Infantil</h3>
+        <p class="text-sm text-[#6b7280] mb-4">Una tarjeta divertida y colorida con animaciones, música y confirmación de asistencia.</p>
+        <a href="#" class="text-primario font-medium hover:underline">Ver detalles</a>
+      </div>
+  
+      <!-- Tarjeta 3 -->
+      <div class="bg-[#fefae0] rounded-xl shadow-md p-6 flex flex-col items-center">
+        <img src="/images/PersonalizacionSeccion/demos/baby-shower.jpg" alt="Ejemplo Baby Shower" class="w-full h-auto rounded-lg mb-4 shadow" />
+        <h3 class="text-xl font-semibold text-[#374151] mb-2">👶 Baby Shower</h3>
+        <p class="text-sm text-[#6b7280] mb-4">Diseño suave y tierno con mapa, dedicatorias, imagen del bebé y música relajante.</p>
+        <a href="#" class="text-primario font-medium hover:underline">Ver detalles</a>
+      </div>
+    </div>
+  </section>
+
+
+<!--Javascript-->
+    <script src="/js/main.js"></script>
+
+<!--Javascript seccion-->
+
+
+<!-- JS de Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/main.js"></script>
+
+<!--Libreria anim JS-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
