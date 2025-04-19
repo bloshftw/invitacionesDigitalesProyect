@@ -9,12 +9,16 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <!--anim-->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--Fuente google fonts-->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Nunito:wght@400;700&family=Poppins:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+
 
 </head>
 
-<body class="bg-[#FFF9F9] text-texto font-principal">
+<body style="font-family: 'Quicksand', sans-serif;" class="bg-[#FFF9F9] text-texto">
 
-<!-- NAVBAR -->
+<!-- Menu de navegacion -->
 <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#FFF9F9] text-[#374151] shadow-sm">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
     <!-- Logo + Nombre -->
@@ -24,9 +28,9 @@
 
     <!-- Menú desktop -->
     <div class="hidden md:flex space-x-6 font-medium text-sm">
-      <a href="#plantillas" class="hover:text-[#A5D8FF] transition-colors">Plantillas</a>
+      <a href="#como-funciona" class="hover:text-[#A5D8FF] transition-colors">¿Cómo funciona?</a>
       <a href="#tematicas" class="hover:text-[#A5D8FF] transition-colors">Temáticas</a>
-      <a href="#como-funciona" class="hover:text-[#A5D8FF] transition-colors">Cómo funciona</a>
+      <a href="#componentes" class="hover:text-[#A5D8FF] transition-colors">Componentes</a>
       <a href="#faq" class="hover:text-[#A5D8FF] transition-colors">FAQ</a>
       <a href="#contacto" class="hover:text-[#A5D8FF] transition-colors">Contacto</a>
     </div>
@@ -39,9 +43,9 @@
 
   <!-- Menú mobile -->
   <div id="menu" class="md:hidden hidden bg-[#FFF9F9] backdrop-blur-md shadow-md px-4 py-3 rounded-b-xl text-sm font-medium transition-all duration-300 ease-in-out transform origin-top scale-y-0">
-    <a href="#plantillas" class="block py-2 hover:text-[#A5D8FF]">Plantillas</a>
+    <a href="#como-funciona" class="block py-2 hover:text-[#A5D8FF]">¿Cómo funciona?</a>
     <a href="#tematicas" class="block py-2 hover:text-[#A5D8FF]">Temáticas</a>
-    <a href="#como-funciona" class="block py-2 hover:text-[#A5D8FF]">Cómo funciona</a>
+    <a href="#componentes" class="block py-2 hover:text-[#A5D8FF]">Componentes</a>
     <a href="#faq" class="block py-2 hover:text-[#A5D8FF]">FAQ</a>
     <a href="#contacto" class="block py-2 hover:text-[#A5D8FF]">Contacto</a>
   </div>
@@ -68,14 +72,14 @@
 
   <!--Hero section-->
 
-<!-- SECCIÓN: ¿Cómo crear tu tarjeta? -->
+<!-- Section: "¿Como crear tu tarjeta?" -->
 <section id="como-funciona" class="py-16 bg-[#FFF9F9] text-center">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl font-bold mb-20 text-[#374151]" data-aos="fade-up">Armá tu tarjeta digital en 3 pasos</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- PASO 1: Elegí un fondo -->
-      <div class="relative bg-white rounded-xl shadow-md p-6 pt-16 flex flex-col items-start text-left max-w-md mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="100">
+      <div class="relative bg-white rounded-xl shadow-md p-6 pt-16 mt-16 flex flex-col items-start text-left max-w-md mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="100">
         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-xl font-bold text-white bg-[#CABDFF] rounded-full shadow-md z-10">01</div>
         <h3 class="text-xl font-semibold text-[#374151] mt-2">🎨 Elegí un fondo</h3>
         <div class="w-10 h-1 bg-[#CABDFF] mt-1 mb-3"></div>
@@ -121,9 +125,10 @@
     </div>
   </div>
 </section>
-<!--SECCION: ¿Como crear tu tarjeta?-->
+<!--Section: "¿Como crear tu tarjeta?""-->
 
-<!--Carousel Gallery-->
+
+<!--Section: "Carrusel de tematicas o fondos"-->
 <section id="tematicas" class="py-16 bg-white text-center">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-bold text-texto mb-2">Temáticas y estilos disponibles</h2>
@@ -209,11 +214,10 @@
     </div>
   </div>
 </section>
-<!--Carruusel Gallery-->
+<!--Section: "Carrusel de tematicas o fondos"-->
 
 
- <!-- SECCIÓN: Componentes disponibles -->
-<!-- SECCIÓN: Componentes disponibles -->
+<!--Section: "Componentes disponibles" -->
 <section id="componentes" class="py-20 bg-[#FFF9F9] text-center">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-bold text-[#374151] mb-4" data-aos="fade-up">Armá tu tarjeta con lo que necesitás</h2>
@@ -273,14 +277,10 @@
     </div>
   </div>
 </section>
-
-
-
-  <!--Seccion COMPONENTES-->
-
-  <!--FAQ-->
+<!--Section: "Componentes disponibles"-->
+  
  
-<!-- FAQ -->
+<!--Section: "FAQ" -->
 <section class="text-gray-700">
   <div class="container px-5 py-24 mx-auto">
     <!-- Título -->
@@ -385,13 +385,10 @@
     </div>
   </div>
 </section>
-<!-- /FAQ -->
+<!--Section: "FAQ" -->
 
 
-
-
-<!--CONTACTO-->
-<!-- CONTACTO -->
+<!-- Section: "Contacto" -->
 <section id="contacto" class="py-20 bg-fondo text-center">
   <div class="max-w-4xl mx-auto px-4">
     <!-- Título -->
@@ -424,13 +421,34 @@
     </p>
   </div>
 </section>
-
-<!--CONTACTO-->
-
+<!--Section: "Contacto"-->
 
 
+<!-- FOOTER -->
+<footer class="bg-[#FFF9F9] border-t border-gray-200 py-10 text-center text-[#374151]" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
 
-  <!-- Footer -->
+    <!-- Logo + nombre -->
+    <div class="flex items-center gap-2">
+      <img src="./images/logo/logo.png" alt="Logo Momentta" class="w-32 h-auto mb-5">
+      <span class="text-xl font-semibold">| Tarjetas digitales</span>
+    </div>
+
+    <!-- Enlaces de navegación -->
+    <nav class="flex flex-wrap justify-center gap-4 text-sm">
+      <a href="#como-funciona" class="hover:text-[#A5D8FF] transition">¿Cómo funciona?</a>
+      <a href="#componentes" class="hover:text-[#A5D8FF] transition">Componentes</a>
+      <a href="#tematicas" class="hover:text-[#A5D8FF] transition">Fondos</a>
+      <a href="#faq" class="hover:text-[#A5D8FF] transition">FAQ</a>
+      <a href="#contacto" class="hover:text-[#A5D8FF] transition">Contacto</a>
+    </nav>
+
+    <!-- Derechos y contacto -->
+    <div class="text-sm text-gray-500">
+      © 2025 Momentta. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
 
   
   <!-- Footer -->
