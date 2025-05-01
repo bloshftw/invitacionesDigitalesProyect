@@ -12,65 +12,115 @@
     <!--Fuente google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      body {
-        font-family: 'Poppins', sans-serif;
+      /* Animaciones básicas con CSS puro */
+      @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
       }
-      .btn-animado {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      @keyframes slideInTop {
+          from { opacity: 0; transform: translateY(-50px); }
+          to { opacity: 1; transform: translateY(0); }
       }
-      .btn-animado:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      
+      @keyframes slideInBottom {
+          from { opacity: 0; transform: translateY(50px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .animate-fade-in-up {
+          animation: fadeInUp 0.8s ease forwards;
+      }
+      
+      .animate-slide-in-top {
+          animation: slideInTop 0.8s ease forwards;
+      }
+      
+      .animate-slide-in-bottom {
+          animation: slideInBottom 0.8s ease forwards;
+      }
+      
+      .delay-100 { animation-delay: 0.1s; }
+      .delay-200 { animation-delay: 0.2s; }
+      .delay-300 { animation-delay: 0.3s; }
+      .delay-400 { animation-delay: 0.4s; }
+      .delay-500 { animation-delay: 0.5s; }
+      
+      /* Transiciones suaves para efectos hover */
+      .option-container {
+          transition: all 0.3s ease;
+      }
+      
+      .option-container:hover {
+          transform: translateY(-10px);
+      }
+      
+      .option-icon {
+          transition: transform 0.3s ease;
+      }
+      
+      .option-container:hover .option-icon {
+          transform: scale(1.1);
+      }
+      
+      .option-button {
+          transition: all 0.3s ease;
+      }
+      
+      .option-button:hover {
+          transform: translateY(-3px);
+      }
+      
+      /* Aseguramos que las secciones se muestren correctamente en pantalla completa */
+      .full-section {
+          min-height: 100vh;
       }
     </style>
 
-
       <title>Servicios Disponibles</title>      
+    
       </head>
 
 
-      <body class="bg-[#FFF9F9] text-[#374151] h-svh">
-
-        <section class="w-full min-h-screen flex flex-col md:flex-row">
-          <!-- Plantilla prefabricada -->
-          <div class="w-full md:w-1/2 relative overflow-hidden group transition-all duration-500 ease-in-out hover:grow cursor-pointer">
-            <div class="absolute inset-0 bg-gradient-to-br from-[#A5D8FF] to-[#93C5FD] z-0"></div>
-            <div class="relative z-10 p-8 flex flex-col justify-center items-center h-full text-white text-center group-hover:scale-105 transition-transform duration-300">
-              <h2 class="text-2xl md:text-4xl font-bold mb-4">🎁 Plantilla Prefabricada</h2>
-              <p class="text-sm md:text-base opacity-70 group-hover:opacity-100 max-w-xs transition-opacity duration-300">
-                Accedé a plantillas visualmente atractivas, listas para usar. Ideales si buscás simplicidad y efectividad sin complicarte.
-              </p>
-              <a href="predisenada.html" class="mt-4 bg-white text-[#374151] font-semibold py-2 px-5 rounded-full shadow hover:bg-gray-200 transition duration-300">Ver plantillas</a>
+      <body class="font-sans bg-gray-100">
+        <div class="full-section flex flex-col md:flex-row">
+            <!-- Opción Personalizado -->
+            <div class="option-container flex-1 bg-blue-200 text-gray-800 p-8 flex items-center justify-center shadow-lg animate-slide-in-top opacity-0">
+                <div class="max-w-lg text-center">
+                    <div class="option-icon mb-8 mx-auto animate-fade-in-up opacity-0 delay-200">
+                        <svg class="w-24 h-24 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6 animate-fade-in-up opacity-0 delay-300">Personalizado</h2>
+                    <p class="text-xl mb-8 leading-relaxed animate-fade-in-up opacity-0 delay-400">
+                        Crea tu propio diseño desde cero con total libertad creativa. 
+                        Personaliza cada detalle según tus necesidades específicas y obtén un resultado único.
+                    </p>
+                    <a href="#personalizado" class="option-button inline-block bg-white text-blue-500 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-50 animate-fade-in-up opacity-0 delay-500">
+                        Comenzar diseño personalizado
+                    </a>
+                </div>
             </div>
-          </div>
-        
-          <!-- Personalizada -->
-          <div class="w-full md:w-1/2 relative overflow-hidden group transition-all duration-500 ease-in-out hover:grow cursor-pointer">
-            <div class="absolute inset-0 bg-gradient-to-br from-[#CABDFF] to-[#B9A9FB] z-0"></div>
-            <div class="relative z-10 p-8 flex flex-col justify-center items-center h-full text-white text-center group-hover:scale-105 transition-transform duration-300">
-              <h2 class="text-2xl md:text-4xl font-bold mb-4">🧩 Personalizada</h2>
-              <p class="text-sm md:text-base opacity-70 group-hover:opacity-100 max-w-xs transition-opacity duration-300">
-                Armá tu tarjeta desde cero: fondo, colores, componentes. Perfecta para quienes desean destacar con estilo propio.
-              </p>
-              <a href="/html/personalizada.html" class="mt-4 bg-white text-[#374151] font-semibold py-2 px-5 rounded-full shadow hover:bg-gray-200 transition duration-300">Crear tarjeta</a>
+    
+            <!-- Opción Plantillas Prefabricadas -->
+            <div class="option-container flex-1 bg-pink-200 text-gray-800 p-8 flex items-center justify-center shadow-lg animate-slide-in-bottom opacity-0">
+                <div class="max-w-lg text-center">
+                    <div class="option-icon mb-8 mx-auto animate-fade-in-up opacity-0 delay-200">
+                        <svg class="w-24 h-24 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6 animate-fade-in-up opacity-0 delay-300">Plantillas Prefabricadas</h2>
+                    <p class="text-xl mb-8 leading-relaxed animate-fade-in-up opacity-0 delay-400">
+                        Ahorra tiempo con nuestras plantillas profesionales listas para usar.
+                        Selecciona entre una variedad de diseños optimizados y personalízalos fácilmente.
+                    </p>
+                    <a href="#plantillas" class="option-button inline-block bg-white text-pink-500 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-pink-50 animate-fade-in-up opacity-0 delay-500">
+                        Explorar plantillas
+                    </a>
+                </div>
             </div>
-          </div>
-        </section>
-          
-          
-          
-      
-        <!--Javascript-->
-  <script src="./js/main.js"></script>
-  <!--Javascript-->
-  <!-- JS de Swiper -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./src/main.js"></script>
-
-  <!--Libreria anim JS-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-      </body>
+        </div>
+    </body>
 </html>
