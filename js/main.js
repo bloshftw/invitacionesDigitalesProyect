@@ -12,19 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 1000,
   });
 
-  // Swiper continuo
-  const swiper = new Swiper('.mySwiper', {
-    loop: true,
-    slidesPerView: 'auto',
-    spaceBetween: 0,
-    speed: 3000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    freeMode: true,
-    freeModeMomentum: false,
-  });
+ 
 
   // Lógica del menú móvil
   const menuBtn = document.getElementById('menu-btn');
