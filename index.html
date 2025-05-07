@@ -7,6 +7,8 @@
   <link href="./src/output.css" rel="stylesheet">
   <!-- CSS de Swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<!--CSS animations-->
+<link rel="stylesheet" href="./css/animations.css">
 <!--anim-->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!--Fuente google fonts-->
@@ -73,59 +75,348 @@
 
   <!--Hero section-->
 
-<!-- Section: "¿Como crear tu tarjeta?" -->
-<section id="como-funciona" class="py-16 bg-[#FFF9F9] text-center">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-20 text-[#374151]" data-aos="fade-up">Armá tu tarjeta digital en 3 pasos</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- PASO 1: Elegí un fondo -->
-      <div class="relative bg-white rounded-xl shadow-md p-6 pt-16 mt-16 flex flex-col items-start text-left max-w-md mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="100">
-        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-xl font-bold text-white bg-[#CABDFF] rounded-full shadow-md z-10">01</div>
-        <h3 class="text-xl font-semibold text-[#374151] mt-2">🎨 Elegí un fondo</h3>
-        <div class="w-10 h-1 bg-[#CABDFF] mt-1 mb-3"></div>
-        <p class="text-sm text-gray-600 mb-4">
-          El fondo define el estilo de tu tarjeta: patrones suaves, animaciones divertidas o colores sólidos.
-        </p>
-        <ul class="text-sm text-[#374151] space-y-1 list-disc list-inside">
-          <li>🎉 Animaciones: globos, estrellitas, flores</li>
-          <li>🎨 Estilos: clásico, moderno, infantil</li>
-          <li>🖊️ Fondo con patrones o textura</li>
-        </ul>
-      </div>
-
-      <!-- PASO 2: Componentes -->
-      <div class="relative bg-white rounded-xl shadow-md p-6 pt-16 mt-16 flex flex-col items-start text-left max-w-md mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="200">
-        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-xl font-bold text-white bg-[#A5D8FF] rounded-full shadow-md z-10">02</div>
-        <h3 class="text-xl font-semibold text-[#374151] mt-2">🧩 Seleccioná los componentes</h3>
-        <div class="w-10 h-1 bg-[#A5D8FF] mt-1 mb-3"></div>
-        <p class="text-sm text-gray-600 mb-4">
-          Agregá funcionalidades visuales e interactivas para hacerla única.
-        </p>
-        <ul class="text-sm text-[#374151] space-y-1 list-disc list-inside">
-          <li>🎵 Música, contador, carrusel</li>
-          <li>📞 Confirmación por WhatsApp o formulario</li>
-          <li>🗺️ Ubicación, video de fondo y más</li>
-        </ul>
-      </div>
-
-      <!-- PASO 3: Contacto -->
-      <div class="relative bg-white rounded-xl shadow-md p-6 pt-16 mt-16 flex flex-col items-start text-left max-w-md mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="300">
-        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-xl font-bold text-white bg-[#FBC4CB] rounded-full shadow-md z-10">03</div>
-        <h3 class="text-xl font-semibold text-[#374151] mt-2">📲 Contactanos por WhatsApp</h3>
-        <div class="w-10 h-1 bg-[#FBC4CB] mt-1 mb-3"></div>
-        <p class="text-sm text-gray-600 mb-4">
-          Te cotizamos según tu selección y trabajamos en una vista previa a medida.
-        </p>
-        <ul class="text-sm text-[#374151] space-y-1 list-disc list-inside">
-          <li>💬 Atención personalizada y directa</li>
-          <li>⏳ Entrega rápida y editable</li>
-          <li>🎨 Visualizá tu tarjeta antes de confirmar</li>
-        </ul>
-      </div>
+   <!-- Sección "¿Cómo funciona?" -->
+   <section id="como-funciona" class="py-20 relative bg-indigo-50 overflow-hidden">
+    <!-- Blobs decorativos -->
+    <div class="blob bg-purple-400 w-96 h-96 rounded-full top-0 right-0 -mr-40 -mt-40"></div>
+    <div class="blob bg-blue-400 w-64 h-64 rounded-full bottom-0 left-20 -mb-20"></div>
+    <div class="blob bg-pink-400 w-80 h-80 rounded-full top-1/2 left-0 -ml-40"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 relative inline-block">
+                ¿Cómo <span class="gradient-text">funciona</span>?
+                <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2/3 h-1.5 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full"></span>
+            </h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600 mt-6">
+                Nuestras tarjetas digitales revolucionan la forma de invitar a tus eventos 
+                con tecnología accesible y diseños impactantes.
+            </p>
+        </div>
+        
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12 mb-20">
+            <!-- Imagen de invitacion en celular -->
+            <div class="lg:w-1/2 relative">
+                <img src="/images/comoFuncionasection/celular.png" alt="Imagen de una invitacion" class="w-full max-w-md mx-auto sm: w-3/4 md:w-2/3 lg:w-full h-auto object-contain">
+                
+              
+            </div>
+            
+            <!-- Descripción del servicio -->
+            <div class="lg:w-1/2">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Tarjetas digitales que impresionan</h3>
+                <p class="text-gray-600 mb-8">
+                    Nuestras tarjetas digitales no solo reemplazan a las invitaciones en papel, sino que ofrecen 
+                    una experiencia interactiva y moderna para tus invitados. Con múltiples funcionalidades 
+                    y un diseño atractivo, comunicarás toda la información necesaria de una forma elegante y efectiva.
+                </p>
+                
+                <div class="space-y-5">
+                    <div class="feature-point flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-800">Fácil de compartir</h4>
+                            <p class="text-gray-600">Envía la invitación por WhatsApp, email o redes sociales con un simple enlace.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-point flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-800">Siempre actualizada</h4>
+                            <p class="text-gray-600">Realiza cambios en la información en cualquier momento, todos verán la versión más reciente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-point flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-800">Ecológica</h4>
+                            <p class="text-gray-600">Reduce tu impacto ambiental eliminando el papel y los desechos de impresión.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ventajas destacadas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+            <div class="feature-card bg-white rounded-xl shadow-md overflow-hidden p-6">
+                <div class="icon-container bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-5">
+                    <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Personalizable</h3>
+                <p class="text-gray-600">Adapta el diseño a tu estilo y temática del evento, con opciones para todos los gustos.</p>
+            </div>
+            
+            <div class="feature-card bg-white rounded-xl shadow-md overflow-hidden p-6">
+                <div class="icon-container bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-5">
+                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Confirmaciones</h3>
+                <p class="text-gray-600">Gestiona fácilmente las confirmaciones de asistencia con un sistema integrado.</p>
+            </div>
+            
+            <div class="feature-card bg-white rounded-xl shadow-md overflow-hidden p-6">
+                <div class="icon-container bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mb-5">
+                    <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Económica</h3>
+                <p class="text-gray-600">Ahorra en costos de impresión y envío de invitaciones tradicionales.</p>
+            </div>
+            
+            <div class="feature-card bg-white rounded-xl shadow-md overflow-hidden p-6">
+                <div class="icon-container bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-5">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Analíticas</h3>
+                <p class="text-gray-600">Conoce cuántas personas han visto tu invitación y confirmado asistencia.</p>
+            </div>
+        </div>
+        
+        <!-- CTA final -->
+        <div class="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-8 shadow-xl text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">¿Listo para crear tu tarjeta digital?</h3>
+            <p class="text-indigo-100 mb-6">
+                Comienza ahora y sorprende a tus invitados con una experiencia única.
+            </p>
+            <button class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                Crear mi tarjeta digital
+            </button>
+        </div>
     </div>
+    
+    <!-- Onda decorativa inferior -->
+    <div class="wave-animation"></div>
+</section>
+<!--Seccion ¿Como funciona?-->
+
+<!--Seccion Selecciona tu evento-->
+
+<!-- Sección: Selecciona tu Tipo de Evento -->
+<section id="selecciona-evento" class="py-20 px-4 relative overflow-hidden">
+  <!-- Formas decorativas de fondo -->
+  <div class="absolute top-0 right-0 w-64 h-64 bg-violet-100 rounded-full opacity-30 -translate-y-1/2 translate-x-1/3"></div>
+  <div class="absolute bottom-0 left-0 w-80 h-80 bg-amber-100 rounded-full opacity-30 translate-y-1/2 -translate-x-1/3"></div>
+  
+  <div class="max-w-7xl mx-auto">
+      <!-- Encabezado de la sección -->
+      <div class="text-center mb-16 relative z-10 opacity-0" id="section-header">
+          <span class="inline-block py-1 px-3 rounded-full bg-violet-100 text-violet-700 font-medium text-sm mb-3">Personaliza tu Invitación</span>
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Selecciona tu <span class="text-gradient">Tipo de Evento</span></h2>
+          <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+              Elige el tipo de evento para el que deseas crear una invitación digital y descubre nuestras plantillas personalizadas.
+          </p>
+      </div>
+      
+      <!-- Cuadrícula de eventos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+          
+          <!-- Evento: Boda -->
+          <div class="event-card opacity-0 cursor-pointer" id="card-1">
+              <div class="relative overflow-hidden rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center transition-all duration-300 card-shadow">
+                  <div class="w-20 h-20 rounded-full bg-violet-500 flex items-center justify-center mb-4 transition-all duration-300" id="icon-wrapper-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white event-icon" id="icon-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Bodas</h3>
+                  <p class="text-gray-600 text-sm">Invitaciones elegantes para tu día especial</p>
+                  <div class="absolute inset-0 bg-violet-500 opacity-0 hover:opacity-5 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+          </div>
+          
+          <!-- Evento: Cumpleaños -->
+          <div class="event-card opacity-0 cursor-pointer" id="card-2">
+              <div class="relative overflow-hidden rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center transition-all duration-300 card-shadow">
+                  <div class="w-20 h-20 rounded-full bg-amber-500 flex items-center justify-center mb-4 transition-all duration-300" id="icon-wrapper-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white event-icon" id="icon-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Cumpleaños</h3>
+                  <p class="text-gray-600 text-sm">Diseños divertidos para celebrar un año más</p>
+                  <div class="absolute inset-0 bg-amber-500 opacity-0 hover:opacity-5 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+          </div>
+          
+          <!-- Evento: Baby Shower -->
+          <div class="event-card opacity-0 cursor-pointer" id="card-3">
+              <div class="relative overflow-hidden rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center transition-all duration-300 card-shadow">
+                  <div class="w-20 h-20 rounded-full bg-pink-500 flex items-center justify-center mb-4 transition-all duration-300" id="icon-wrapper-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white event-icon" id="icon-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Baby Shower</h3>
+                  <p class="text-gray-600 text-sm">Celebra la llegada de tu bebé con estilo</p>
+                  <div class="absolute inset-0 bg-pink-500 opacity-0 hover:opacity-5 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+          </div>
+          
+          <!-- Evento: Graduación -->
+          <div class="event-card opacity-0 cursor-pointer" id="card-4">
+              <div class="relative overflow-hidden rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center transition-all duration-300 card-shadow">
+                  <div class="w-20 h-20 rounded-full bg-blue-500 flex items-center justify-center mb-4 transition-all duration-300" id="icon-wrapper-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white event-icon" id="icon-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Graduación</h3>
+                  <p class="text-gray-600 text-sm">Celebra tus logros académicos</p>
+                  <div class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-5 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+          </div>
+          
+          <!-- Evento: Corporativo -->
+          <div class="event-card opacity-0 cursor-pointer" id="card-5">
+              <div class="relative overflow-hidden rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center transition-all duration-300 card-shadow">
+                  <div class="w-20 h-20 rounded-full bg-gray-700 flex items-center justify-center mb-4 transition-all duration-300" id="icon-wrapper-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white event-icon" id="icon-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Corporativo</h3>
+                  <p class="text-gray-600 text-sm">Eventos profesionales y reuniones de empresa</p>
+                  <div class="absolute inset-0 bg-gray-700 opacity-0 hover:opacity-5 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+          </div>
+          
+          <!-- Evento: Aniversario -->
+          <div class="event-card opacity-0 cursor-pointer" id="card-6">
+              <div class="relative overflow-hidden rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center transition-all duration-300 card-shadow">
+                  <div class="w-20 h-20 rounded-full bg-red-500 flex items-center justify-center mb-4 transition-all duration-300" id="icon-wrapper-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white event-icon" id="icon-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Aniversario</h3>
+                  <p class="text-gray-600 text-sm">Celebra años de amor y compromiso</p>
+                  <div class="absolute inset-0 bg-red-500 opacity-0 hover:opacity-5 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+          </div>
+          
+          <!-- Evento: Despedida -->
+          <div class="event-card opacity-0 cursor-pointer" id="card-7">
+              <div class="relative overflow-hidden rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center transition-all duration-300 card-shadow">
+                  <div class="w-20 h-20 rounded-full bg-green-500 flex items-center justify-center mb-4 transition-all duration-300" id="icon-wrapper-7">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white event-icon" id="icon-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Despedida</h3>
+                  <p class="text-gray-600 text-sm">Despedidas de soltero/a y jubilaciones</p>
+                  <div class="absolute inset-0 bg-green-500 opacity-0 hover:opacity-5 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+          </div>
+          
+          <!-- Evento: Fiesta Temática -->
+          <div class="event-card opacity-0 cursor-pointer" id="card-8">
+              <div class="relative overflow-hidden rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center transition-all duration-300 card-shadow">
+                  <div class="w-20 h-20 rounded-full bg-purple-500 flex items-center justify-center mb-4 transition-all duration-300" id="icon-wrapper-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white event-icon" id="icon-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Fiesta Temática</h3>
+                  <p class="text-gray-600 text-sm">Celebraciones con temáticas especiales</p>
+                  <div class="absolute inset-0 bg-purple-500 opacity-0 hover:opacity-5 transition-opacity duration-300 rounded-2xl"></div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- CTA -->
+      <div class="mt-16 text-center opacity-0" id="cta-section">
+          <a href="#personalizado" class="inline-block py-4 px-8 bg-gradient-to-r from-violet-600 to-amber-500 text-white font-bold rounded-full text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              ¿No encuentras tu evento? Personalízalo
+          </a>
+          <p class="mt-4 text-gray-600">Podemos crear invitaciones para cualquier ocasión especial</p>
+      </div>
   </div>
 </section>
+<!--Seccion selecciona tu evento-->
+
+<!-- Section: "¿Como crear tu tarjeta?" -->
+<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="font-headline text-2xl font-semibold sm:text-3xl text-center">Adquiri tu tarjeta digital en 3 pasos</h2>
+
+  <div class="grid sm:grid-cols-3 gap-16 sm:gap-8 mt-16 sm:mt-24">
+
+    <!--Paso numero 1-->
+    <div class="text-center">
+      <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+          <div
+              class="z-10 relative w-full h-full bg-pink-300 rounded-full border border-gray-300 shadow flex items-center justify-center">
+              <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+                <div class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center">
+                    <img src="/images/Icons/icono1.gif" alt="Imagen globos" class="object-contain w-3/4 h-3/4">
+                </div>
+            </div>
+          </div>
+          <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-pink-200 rounded-full"></div>
+      </div>
+      <h3 class="font-headline text-xl sm:text-2xl mt-6 sm:mt-10">1. Selecciona el evento que deseas</h3>
+      <p class="leading-relaxed mt-4">Puedes elegir entre diversos eventos para ver plantillas personalizadas que se ajusten a lo que necesitas!</p>
+  </div>
+
+      <!--Paso numero 2-->
+      <div class="text-center">
+        <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+            <div
+                class="z-10 relative w-full h-full bg-yellow-300 rounded-full border border-gray-300 shadow flex items-center justify-center">
+                <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+                  <div class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center">
+                      <img src="/images/Icons/icono2.gif" alt="Pedido" class="object-contain w-3/4 h-3/4">
+                  </div>
+              </div>
+            </div>
+            <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-yellow-200 rounded-full"></div>
+        </div>
+        <h3 class="font-headline text-xl sm:text-2xl mt-6 sm:mt-10">2. Selecciona la invitación que mas te guste</h3>
+        <p class="leading-relaxed mt-4">Explora entre diversas invitaciones con tematicas, colores y estilos diferentes!</p>
+    </div>
+
+      <!--Paso numero 3-->
+      <div class="text-center">
+          <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+              <div
+                  class="z-10 relative w-full h-full bg-green-300 rounded-full border border-gray-300 shadow flex items-center justify-center">
+                  <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+                    <div class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center">
+                        <img src="/images/Icons/icono3.gif" alt="Pedido" class="object-contain w-3/4 h-3/4">
+                    </div>
+                </div>
+              </div>
+              <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-green-200 rounded-full"></div>
+          </div>
+          <h3 class="font-headline text-xl sm:text-2xl mt-6 sm:mt-10">3. Haz el pedido</h3>
+          <p class="leading-relaxed mt-4">Una vez seleccionada tu plantilla ponte en contacto con nosotros para ajustar detalles y dejarla lista para tu evento!</p>
+      </div>
+  </div>
+</div>
 <!--Section: "¿Como crear tu tarjeta?""-->
 
 
@@ -221,7 +512,7 @@
 <!--Section: "Componentes disponibles" -->
 <section id="componentes" class="py-20 bg-[#FFF9F9] text-center">
   <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-[#374151] mb-4" data-aos="fade-up">Armá tu tarjeta con lo que necesitás</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-[#374151] mb-4" data-aos="fade-up">tu tarjeta con lo que necesitás</h2>
     <p class="text-gray-600 mb-10" data-aos="fade-up" data-aos-delay="100">
       Elegí entre los componentes que mejor se adapten a tu evento. Algunos están incluidos según el paquete elegido, otros podés sumarlos como extras personalizados.
     </p>
@@ -394,7 +685,7 @@
   <div class="max-w-4xl mx-auto px-4">
     <!-- Título -->
     <h2 class="text-3xl md:text-4xl font-bold text-texto mb-4">
-      ¿Listo para crear tu invitación?
+      ¿Listo para adquirir tu invitación?
     </h2>
 
     <!-- Subtítulo -->
@@ -450,12 +741,14 @@
     </div>
   </div>
 </footer>
-
-  
-  <!-- Footer -->
+<!-- Footer -->
 
   <!--Javascript-->
   <script src="./js/main.js"></script>
+  <!--Animations js-->
+  <script src="./js/animations.js"></script>
+  <!--Animations cuadricula js-->
+  <script src="./js/animations-cuadricula.js"></script>
   <!--Javascript-->
   <!-- JS de Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
