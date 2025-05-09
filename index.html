@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <!--CSS animations-->
 <link rel="stylesheet" href="./css/animations.css">
+<!--CSS Hero-->
+<link rel="stylesheet" href="./css/hero.css">
+<!--CSS background-->
+<link rel="stylesheet" href="./css/background.css">
 <!--anim-->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!--Fuente google fonts-->
@@ -18,10 +22,10 @@
 
 </head>
 
-<body style="font-family: 'Roboto Flex', sans-serif;" class="bg-[#FFF9F9] text-texto">
+<body style="font-family: 'Roboto Flex', sans-serif;" class="bg-[#FFF9F9] text-[#374151]">
 
 <!-- Menu de navegacion -->
-<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#FFF9F9] text-[#374151] shadow-sm">
+<nav class="fixed top-0 left-0 w-full z-50  bg-indigo-50 text-[#374151] shadow-sm">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
     <!-- Logo + Nombre -->
     <div class="flex items-center space-x-2">
@@ -45,7 +49,7 @@
   </div>
 
   <!-- Menú mobile -->
-  <div id="menu" class="md:hidden hidden bg-[#FFF9F9] backdrop-blur-md shadow-md px-4 py-3 rounded-b-xl text-sm font-medium transition-all duration-300 ease-in-out transform origin-top scale-y-0">
+  <div id="menu" class="md:hidden hidden bg-indigo-50 shadow-md px-4 py-3 rounded-b-xl text-sm font-medium transition-all duration-300 ease-in-out transform origin-top scale-y-0">
     <a href="#como-funciona" class="block py-2 hover:text-[#A5D8FF]">¿Cómo funciona?</a>
     <a href="#tematicas" class="block py-2 hover:text-[#A5D8FF]">Temáticas</a>
     <a href="#componentes" class="block py-2 hover:text-[#A5D8FF]">Componentes</a>
@@ -57,33 +61,41 @@
 
 
 <!-- Hero Section -->
-  <div class="relative h-screen text-white overflow-hidden">
-    <div class="absolute inset-0">
-      <img src="./images/hero/wedding-rings-invitation-cards-with-flowers.jpg" alt="Background Image"
-        class="object-cover object-center w-full h-full" />
-      <div class="absolute inset-0 bg-black opacity-50"></div>
+    <!-- Hero Section con altura limitada -->
+  <section class="hero-section">
+    <!-- Confetti Canvas - Ahora con position absolute -->
+    <canvas id="confettiCanvas" class="absolute top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
+    
+    <!-- Balloon Container - Ahora con position absolute -->
+    <div id="balloonContainer" class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none"></div>
+    
+    <!-- Hero Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 py-20 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="mb-6 text-4xl font-bold tracking-tight md:text-6xl text-neutral-800">
+          Invitaciones Digitales para Momentos Especiales
+        </h1>
+        <p class="mb-8 text-lg text-neutral-600 md:text-xl">
+          Crea invitaciones únicas y personalizadas para cualquier tipo de evento. Bodas, cumpleaños, baby showers y
+          más, todo en un solo lugar.
+        </p>
+        <button class="px-8 py-4 text-lg font-medium text-white transition-all rounded-full bg-neutral-800 hover:bg-neutral-700 hover:shadow-lg">
+          Crear Invitación
+        </button>
+      </div>
     </div>
-
-    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
-      <h1 class="text-5xl font-bold leading-tight mb-4 ">Tu evento, tu estilo. Invitaciones digitales únicas.</h1>
-      <p class="text-lg text-gray-300 mb-8">Personalizá, compartí y sorprendé a tus invitados con un diseño a tu medida.
-      </p>
-      <a href="#como-funciona"
-        class="bg-[#d4a373] text-gray-900 hover:bg-[#d4a373] py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Comenzar</a>
-    </div>
-  </div>
-
-  <!--Hero section-->
+  </section>
+<!--Hero section-->
 
 
-   <!-- Sección "¿Cómo funciona?" -->
-   <section id="como-funciona" class="py-20 relative bg-indigo-50 overflow-hidden">
+<!-- Sección "¿Cómo funciona?" -->
+   <section id="como-funciona" class="relative overflow-hidden">
     <!-- Blobs decorativos -->
     <div class="blob bg-purple-400 w-96 h-96 rounded-full top-0 right-0 -mr-40 -mt-40"></div>
     <div class="blob bg-blue-400 w-64 h-64 rounded-full bottom-0 left-20 -mb-20"></div>
     <div class="blob bg-pink-400 w-80 h-80 rounded-full top-1/2 left-0 -ml-40"></div>
     
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 ]">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold text-gray-800 mb-4 relative inline-block">
                 ¿Cómo <span class="text-gradient">funciona</span>?
@@ -151,6 +163,7 @@
                 </div>
             </div>
         </div>
+    
         
         <!-- Ventajas destacadas -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
@@ -197,26 +210,24 @@
         
         <!-- CTA final -->
         <div class="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-8 shadow-xl text-center">
-            <h3 class="text-2xl font-bold text-white mb-4">¿Listo para crear tu tarjeta digital?</h3>
+            <h3 class="text-2xl font-bold text-white mb-4">¿Listo para adquirir tu tarjeta digital?</h3>
             <p class="text-indigo-100 mb-6">
                 Comienza ahora y sorprende a tus invitados con una experiencia única.
             </p>
             <button class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                Crear mi tarjeta digital
+                Obtener mi tarjeta digital
             </button>
         </div>
     </div>
     
-    <!-- Onda decorativa inferior -->
-    <div class="wave-animation"></div>
-</section>
 <!--Seccion ¿Como funciona?-->
 
 
 
 <!-- Section: "¿Como crear tu tarjeta?" -->
-<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
-  <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gradient text-center">Adquiere tu tarjeta digital en solo 3 pasos</h2>
+      <div class="bg-[#E0E7FF] mt-10">
+<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 ">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">Adquiere tu tarjeta digital en <span class="text-gradient">solo 3 pasos</span></h2>
 
   <div class="grid sm:grid-cols-3 gap-16 sm:gap-8 mt-16 sm:mt-24">
 
@@ -272,17 +283,16 @@
       </div>
   </div>
 </div>
+      </div>
 <!--Section: "¿Como crear tu tarjeta?""-->
 
-<!--Seccion Selecciona tu evento-->
+
 
 <!-- Sección: Selecciona tu Tipo de Evento -->
-<section id="selecciona-evento" class="py-20 px-4 relative overflow-hidden bg-indigo-50">
-  <!-- Formas decorativas de fondo -->
-  <div class="absolute top-0 right-0 w-64 h-64 bg-violet-100 rounded-full opacity-30 -translate-y-1/2 translate-x-1/3"></div>
-  <div class="absolute bottom-0 left-0 w-80 h-80 bg-amber-100 rounded-full opacity-30 translate-y-1/2 -translate-x-1/3"></div>
+      <section id="selecciona-evento" class="py-20 px-4 relative overflow-hidden ">
   
-  <div class="max-w-7xl mx-auto">
+  
+  <div class="max-w-7xl mx-auto ">
       <!-- Encabezado de la sección -->
       <div class="text-center mb-16 relative z-10 opacity-0" id="section-header">
           <span class="inline-block py-1 px-3 rounded-full bg-violet-100 text-violet-700 font-medium text-sm mb-3">Personaliza tu Invitación</span>
@@ -418,18 +428,16 @@
           <p class="mt-4 text-gray-600">Podemos crear invitaciones para cualquier ocasión especial</p>
       </div>
   </div>
-</section>
+      </section>
 <!--Seccion selecciona tu evento-->
-    
-<!--Section: "Carrusel de tematicas o fondos"-->
 
 
-<!--Section: "Componentes disponibles" -->
-<section id="componentes" class="py-20 bg-[#FFF9F9] text-center">
+<!--Section: "Componentes" -->
+<section id="componentes" class="py-20 text-center bg-[#E0E7FF]">
   <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-[#374151] mb-4" data-aos="fade-up">tu tarjeta con lo que necesitás</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">tu tarjeta con lo que necesitás</h2>
     <p class="text-gray-600 mb-10" data-aos="fade-up" data-aos-delay="100">
-      Elegí entre los componentes que mejor se adapten a tu evento. Algunos están incluidos según el paquete elegido, otros podés sumarlos como extras personalizados.
+      Tus invitaciones con multiples componentes para dar la informacion y la personalizacion necesaria para que tu evento sea unico!
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -475,24 +483,17 @@
         <p class="text-sm text-gray-600">Dinamismo visual que le da vida y profundidad a tu tarjeta.</p>
       </div>
     </div>
-
-    <!-- Botón CTA -->
-    <div class="mt-12" data-aos="fade-up" data-aos-delay="300">
-      <a href="./html/seleccionServicio.html" class="inline-block bg-[#A5D8FF] text-white font-medium py-3 px-6 rounded-full shadow-md hover:bg-[#93C5FD] transition">
-        Ver opciones de fondos y personalización
-      </a>
-    </div>
   </div>
 </section>
 <!--Section: "Componentes disponibles"-->
   
  
 <!--Section: "FAQ" -->
-<section id="faq"  class="text-gray-700">
+<section id="faq"  class="bg-[#fffbfb]">
   <div class="container px-5 py-24 mx-auto">
     <!-- Título -->
     <div class="text-center mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+      <h1 class="sm:text-4xl text-3xl font-medium text-center title-font mb-4">
         Preguntas Frecuentes
       </h1>
       <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
@@ -632,7 +633,7 @@
 
 
 <!-- FOOTER -->
-<footer class="bg-[#FFF9F9] border-t border-gray-200 py-10 text-center text-[#374151]" data-aos="fade-up">
+<footer class="bg-[#fffbfb] border-t border-gray-200 py-10 text-center text-[#374151]" data-aos="fade-up">
   <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
 
     <!-- Logo + nombre -->
@@ -660,6 +661,8 @@
 
   <!--Javascript-->
   <script src="./js/main.js"></script>
+  <!--Hero JS-->
+  <script src="./js/hero.js"></script>
   <!--Animations js-->
   <script src="./js/animations.js"></script>
   <!--Animations cuadricula js-->
