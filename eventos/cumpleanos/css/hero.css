@@ -1,0 +1,150 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    
+    .fancy-title {
+      font-family: 'Dancing Script', cursive;
+    }
+    
+    .hero-slide {
+      height: 550px;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    @media (max-width: 768px) {
+      .hero-slide {
+        height: 500px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero-slide {
+        height: 450px;
+      }
+    }
+    
+    .slide-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+    
+    .feature-card {
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transform: translateY(0);
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+    }
+    
+    .btn-secondary {
+      transition: all 0.3s ease;
+    }
+    
+    .btn-secondary:hover {
+      transform: translateY(-3px);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.3);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 18px;
+    }
+    
+    /* Animaciones */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    .pulse-animation {
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    /* Confeti decorativo */
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ffffff;
+      opacity: 0.8;
+      border-radius: 2px;
+      z-index: 5;
+    }
+    
+    /* Hero swiper container */
+    .hero-swiper {
+      width: 100%;
+      height: 100%;
+    }
+    
+    /* Features section */
+    .features-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 20;
+      padding: 1rem;
+    }
+    
+    @media screen and (max-width: 640px) {
+      .features-container {
+        position: relative;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9));
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+    }

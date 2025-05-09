@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS De Tailwind-->
+     <link href="/src/output.css" rel="stylesheet">
+     <!--Stylesheet CSS-->
+     <link rel="stylesheet" href="/eventos/cumpleanos/css/stylesheet.css">
+     <!--Stylesheet Carrusel-->
+     <link rel="stylesheet" href="/eventos/cumpleanos/css/carrusel.css">
+     <!--Stylesheet Hero-->
+     <link rel="stylesheet" href="/eventos/cumpleanos/css/hero.css">
+    <!--Fuente google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <!-- CSS de Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+
+
+<body style="font-family: 'Roboto Flex', sans-serif;" class=" text-[#374151]">
+ 
+    <!-- Menu de navegacion -->
+    <nav class="fixed top-0 left-0 w-full z-50  bg-indigo-50 text-[#374151] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Logo + Nombre -->
+      <div class="flex items-center space-x-2">
+        <img src="/images/logo/logo.png" alt="Momentta Logo" class="w-44 h-auto">
+      </div>
+  
+      <!-- Menú desktop -->
+      <div class="hidden md:flex space-x-6 font-medium text-sm">
+        <a href="/index.html" class="hover:text-[#A5D8FF] transition-colors">Inicio</a>
+        <a href="#como-funciona" class="hover:text-[#A5D8FF] transition-colors">¿Cómo funciona?</a>
+        <a href="#tematicas" class="hover:text-[#A5D8FF] transition-colors">Temáticas</a>
+        <a href="#componentes" class="hover:text-[#A5D8FF] transition-colors">Componentes</a>
+        <a href="#faq" class="hover:text-[#A5D8FF] transition-colors">FAQ</a>
+        <a href="#contacto" class="hover:text-[#A5D8FF] transition-colors">Contacto</a>
+      </div>
+  
+      <!-- Botón hamburguesa (mobile) -->
+      <button id="menu-btn" class="md:hidden text-[#374151] focus:outline-none text-2xl">
+        ☰
+      </button>
+    </div>
+  
+    <!-- Menú mobile -->
+    <div id="menu" class="md:hidden hidden bg-indigo-50 shadow-md px-4 py-3 rounded-b-xl text-sm font-medium transition-all duration-300 ease-in-out transform origin-top scale-y-0">
+      <a href="#como-funciona" class="block py-2 hover:text-[#A5D8FF]">¿Cómo funciona?</a>
+      <a href="#tematicas" class="block py-2 hover:text-[#A5D8FF]">Temáticas</a>
+      <a href="#componentes" class="block py-2 hover:text-[#A5D8FF]">Componentes</a>
+      <a href="#faq" class="block py-2 hover:text-[#A5D8FF]">FAQ</a>
+      <a href="#contacto" class="block py-2 hover:text-[#A5D8FF]">Contacto</a>
+    </div>
+    </nav>
+  <!--Menu de navegacion-->
+
+
+<!--HERO-->
+<section class="relative">
+    <!-- Confeti decorativo (generado por JS) -->
+    <div id="confetti-container" class="absolute top-0 left-0 w-full h-full pointer-events-none z-10"></div>
+    
+    <!-- Swiper Container -->
+    <div class="swiper-container hero-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1: Celebraciones Infantiles -->
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('/eventos/cumpleanos/img/hero/infantil.jpg');">
+            <div class="slide-overlay">
+              <h2 class="text-white text-xl md:text-3xl font-bold mb-2 z-10">Plantillas para</h2>
+              <h1 class="fancy-title text-4xl md:text-6xl text-white font-bold mb-4 z-10 pulse-animation">Celebraciones Infantiles</h1>
+              <p class="text-white text-sm md:text-lg max-w-xl mx-auto mb-6 z-10 text-center">Haz que el día especial de los pequeños sea inolvidable con nuestros diseños coloridos y divertidos</p>
+              
+              <div class="flex flex-col sm:flex-row gap-4 z-10">
+                <a href="#" class="btn-primary px-6 py-2 md:px-8 md:py-3 rounded-full text-white font-medium">Ver plantillas</a>
+                <a href="#" class="btn-secondary px-6 py-2 md:px-8 md:py-3 rounded-full text-white border border-white font-medium">Más información</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 2: Momentos Especiales -->
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('/eventos/cumpleanos/img/hero/15anos.jpg');">
+            <div class="slide-overlay">
+              <h2 class="text-white text-xl md:text-3xl font-bold mb-2 z-10">Plantillas para</h2>
+              <h1 class="fancy-title text-4xl md:text-6xl text-white font-bold mb-4 z-10 pulse-animation">Momentos Especiales</h1>
+              <p class="text-white text-sm md:text-lg max-w-xl mx-auto mb-6 z-10 text-center">Celebra esos hitos importantes en la vida con invitaciones elegantes que capturen la esencia del momento</p>
+              
+              <div class="flex flex-col sm:flex-row gap-4 z-10">
+                <a href="#" class="btn-primary px-6 py-2 md:px-8 md:py-3 rounded-full text-white font-medium">Ver plantillas</a>
+                <a href="#" class="btn-secondary px-6 py-2 md:px-8 md:py-3 rounded-full text-white border border-white font-medium">Más información</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 3: Diseños Temáticos -->
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('/eventos/cumpleanos/img/hero/tematica.jpg');">
+            <div class="slide-overlay">
+              <h2 class="text-white text-xl md:text-3xl font-bold mb-2 z-10">Plantillas para</h2>
+              <h1 class="fancy-title text-4xl md:text-6xl text-white font-bold mb-4 z-10 pulse-animation">Diseños Temáticos</h1>
+              <p class="text-white text-sm md:text-lg max-w-xl mx-auto mb-6 z-10 text-center">Dale personalidad a tu celebración con nuestros diversos temas para todas las edades y gustos</p>
+              
+              <div class="flex flex-col sm:flex-row gap-4 z-10">
+                <a href="#" class="btn-primary px-6 py-2 md:px-8 md:py-3 rounded-full text-white font-medium">Ver plantillas</a>
+                <a href="#" class="btn-secondary px-6 py-2 md:px-8 md:py-3 rounded-full text-white border border-white font-medium">Más información</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 4: Para Todas las Edades -->
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('/eventos/cumpleanos/img/hero/todaslasedades.jpg');">
+            <div class="slide-overlay">
+              <h2 class="text-white text-xl md:text-3xl font-bold mb-2 z-10">Plantillas para</h2>
+              <h1 class="fancy-title text-4xl md:text-6xl text-white font-bold mb-4 z-10 pulse-animation">Todas las Edades</h1>
+              <p class="text-white text-sm md:text-lg max-w-xl mx-auto mb-6 z-10 text-center">Elegancia y estilo para celebrar cada cumpleaños, sin importar el número de velas en el pastel</p>
+              
+              <div class="flex flex-col sm:flex-row gap-4 z-10">
+                <a href="#" class="btn-primary px-6 py-2 md:px-8 md:py-3 rounded-full text-white font-medium">Ver plantillas</a>
+                <a href="#" class="btn-secondary px-6 py-2 md:px-8 md:py-3 rounded-full text-white border border-white font-medium">Más información</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+   <!-- Hero Section -->
+<!-- Grid de Plantillas con Diseño Moderno -->
+<section class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16 text-party-dark">Plantillas Disponibles</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Plantilla 1 -->
+            <div class="template-card">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col transform hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Plantilla Infantil" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-party-primary text-white text-sm font-bold px-4 py-1 rounded-full">
+                            Infantil
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-party-dark mb-3">Fiesta de Globos</h3>
+                        <p class="text-gray-600 mb-6">Plantilla colorida ideal para fiestas infantiles con temática de globos y confeti.</p>
+                        
+                        <!-- Mockup de celular moderno -->
+                        <div class="modern-phone-mockup mx-auto mb-8">
+                            <div class="modern-phone-frame">
+                                <div class="modern-phone-notch"></div>
+                                <div class="modern-phone-screen">
+                                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                         alt="Vista previa en móvil" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Botones de versiones con diseño moderno -->
+                        <div class="space-y-3 mt-auto">
+                            <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Estándar • $15
+                            </a>
+                            <a href="#" class="block w-full bg-party-accent/20 hover:bg-party-accent/30 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Gold • $25
+                            </a>
+                            <a href="#" class="block w-full bg-party-primary text-white font-medium py-3 px-4 rounded-xl transition duration-300 text-center shadow-md hover:shadow-lg">
+                                Premium • $40
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plantilla 2 -->
+            <div class="template-card">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col transform hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1533294455009-a77b7557d2d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Plantilla Adultos" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-party-secondary text-white text-sm font-bold px-4 py-1 rounded-full">
+                            Adultos
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-party-dark mb-3">Elegancia Dorada</h3>
+                        <p class="text-gray-600 mb-6">Diseño sofisticado con detalles dorados para celebraciones de adultos con estilo.</p>
+                        
+                        <!-- Mockup de celular moderno -->
+                        <div class="modern-phone-mockup mx-auto mb-8">
+                            <div class="modern-phone-frame">
+                                <div class="modern-phone-notch"></div>
+                                <div class="modern-phone-screen">
+                                    <img src="https://images.unsplash.com/photo-1533294455009-a77b7557d2d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                         alt="Vista previa en móvil" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Botones de versiones con diseño moderno -->
+                        <div class="space-y-3 mt-auto">
+                            <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Estándar • $20
+                            </a>
+                            <a href="#" class="block w-full bg-party-accent/20 hover:bg-party-accent/30 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Gold • $35
+                            </a>
+                            <a href="#" class="block w-full bg-party-primary text-white font-medium py-3 px-4 rounded-xl transition duration-300 text-center shadow-md hover:shadow-lg">
+                                Premium • $50
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plantilla 3 -->
+            <div class="template-card">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col transform hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Plantilla Temática" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold px-4 py-1 rounded-full">
+                            Temática
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-party-dark mb-3">Aventura Espacial</h3>
+                        <p class="text-gray-600 mb-6">Plantilla con temática espacial, ideal para niños fascinados por el espacio y los planetas.</p>
+                        
+                        <!-- Mockup de celular moderno -->
+                        <div class="modern-phone-mockup mx-auto mb-8">
+                            <div class="modern-phone-frame">
+                                <div class="modern-phone-notch"></div>
+                                <div class="modern-phone-screen">
+                                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                         alt="Vista previa en móvil" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Botones de versiones con diseño moderno -->
+                        <div class="space-y-3 mt-auto">
+                            <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Estándar • $18
+                            </a>
+                            <a href="#" class="block w-full bg-party-accent/20 hover:bg-party-accent/30 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Gold • $30
+                            </a>
+                            <a href="#" class="block w-full bg-party-primary text-white font-medium py-3 px-4 rounded-xl transition duration-300 text-center shadow-md hover:shadow-lg">
+                                Premium • $45
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plantilla 4 -->
+            <div class="template-card">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col transform hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Plantilla Elegante" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-party-accent text-party-dark text-sm font-bold px-4 py-1 rounded-full">
+                            Elegante
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-party-dark mb-3">Noche de Gala</h3>
+                        <p class="text-gray-600 mb-6">Diseño elegante para celebraciones formales con detalles sofisticados y acabados premium.</p>
+                        
+                        <!-- Mockup de celular moderno -->
+                        <div class="modern-phone-mockup mx-auto mb-8">
+                            <div class="modern-phone-frame">
+                                <div class="modern-phone-notch"></div>
+                                <div class="modern-phone-screen">
+                                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                         alt="Vista previa en móvil" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Botones de versiones con diseño moderno -->
+                        <div class="space-y-3 mt-auto">
+                            <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Estándar • $25
+                            </a>
+                            <a href="#" class="block w-full bg-party-accent/20 hover:bg-party-accent/30 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Gold • $40
+                            </a>
+                            <a href="#" class="block w-full bg-party-primary text-white font-medium py-3 px-4 rounded-xl transition duration-300 text-center shadow-md hover:shadow-lg">
+                                Premium • $60
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plantilla 5 -->
+            <div class="template-card">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col transform hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1336&q=80" 
+                             alt="Plantilla Infantil" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-party-primary text-white text-sm font-bold px-4 py-1 rounded-full">
+                            Infantil
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-party-dark mb-3">Mundo Mágico</h3>
+                        <p class="text-gray-600 mb-6">Plantilla llena de magia y fantasía para celebraciones infantiles llenas de imaginación.</p>
+                        
+                        <!-- Mockup de celular moderno -->
+                        <div class="modern-phone-mockup mx-auto mb-8">
+                            <div class="modern-phone-frame">
+                                <div class="modern-phone-notch"></div>
+                                <div class="modern-phone-screen">
+                                    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1336&q=80" 
+                                         alt="Vista previa en móvil" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Botones de versiones con diseño moderno -->
+                        <div class="space-y-3 mt-auto">
+                            <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Estándar • $15
+                            </a>
+                            <a href="#" class="block w-full bg-party-accent/20 hover:bg-party-accent/30 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Gold • $25
+                            </a>
+                            <a href="#" class="block w-full bg-party-primary text-white font-medium py-3 px-4 rounded-xl transition duration-300 text-center shadow-md hover:shadow-lg">
+                                Premium • $40
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plantilla 6 -->
+            <div class="template-card">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col transform hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1602631985686-1bb0e6a8696e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Plantilla Temática" class="w-full h-56 object-cover">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold px-4 py-1 rounded-full">
+                            Temática
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-party-dark mb-3">Aventura Tropical</h3>
+                        <p class="text-gray-600 mb-6">Diseño tropical con colores vibrantes para fiestas veraniegas y celebraciones al aire libre.</p>
+                        
+                        <!-- Mockup de celular moderno -->
+                        <div class="modern-phone-mockup mx-auto mb-8">
+                            <div class="modern-phone-frame">
+                                <div class="modern-phone-notch"></div>
+                                <div class="modern-phone-screen">
+                                    <img src="https://images.unsplash.com/photo-1602631985686-1bb0e6a8696e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                         alt="Vista previa en móvil" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Botones de versiones con diseño moderno -->
+                        <div class="space-y-3 mt-auto">
+                            <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Estándar • $18
+                            </a>
+                            <a href="#" class="block w-full bg-party-accent/20 hover:bg-party-accent/30 text-party-dark font-medium py-3 px-4 rounded-xl transition duration-300 text-center">
+                                Gold • $30
+                            </a>
+                            <a href="#" class="block w-full bg-party-primary text-white font-medium py-3 px-4 rounded-xl transition duration-300 text-center shadow-md hover:shadow-lg">
+                                Premium • $45
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botón Cargar Más -->
+        <div class="text-center mt-16">
+            <button class="bg-party-secondary hover:bg-party-secondary/90 text-white font-medium py-4 px-10 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Ver más plantillas
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+<footer class="bg-[#fffbfb] border-t border-gray-200 py-10 text-center text-[#374151]" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+  
+      <!-- Logo + nombre -->
+      <div class="flex items-center gap-2">
+        <img src="/images/logo/logo.png" alt="Logo Momentta" class="w-32 h-auto mb-5">
+        <span class="text-xl font-semibold">| Tarjetas digitales</span>
+      </div>
+  
+      <!-- Enlaces de navegación -->
+      <nav class="flex flex-wrap justify-center gap-4 text-sm">
+        <a href="#como-funciona" class="hover:text-[#A5D8FF] transition">¿Cómo funciona?</a>
+        <a href="#componentes" class="hover:text-[#A5D8FF] transition">Componentes</a>
+        <a href="#tematicas" class="hover:text-[#A5D8FF] transition">Fondos</a>
+        <a href="#faq" class="hover:text-[#A5D8FF] transition">FAQ</a>
+        <a href="#contacto" class="hover:text-[#A5D8FF] transition">Contacto</a>
+      </nav>
+  
+      <!-- Derechos y contacto -->
+      <div class="text-sm text-gray-500">
+        © 2025 Momentta. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+    <!--Javascript Cumpleaños-->
+        <script src="/eventos/cumpleanos/js/swiper.js"></script>
+
+    <!--Javascript Nav-->
+        <script src="/eventos/cumpleanos/js/nav.js"></script>
+    <!--Javascript main-->
+        <script src="/eventos/cumpleanos/js/main.js"></script>
+    
+    <!-- JS de Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Libreria anim JS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    
+
+    </body>
+</html>
